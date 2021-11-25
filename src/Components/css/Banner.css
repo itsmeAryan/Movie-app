@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.banner{
+    width: 100%;
+    position: relative;
+}
+.banner .img-fold{
+    width: 100%;
+height: 28rem;
+display: flex;
+    position: relative;
+}
+.banner .img-fold img{
+    width: 100%;
+    object-fit: cover;
+}
+.navbar{
+    background-color: aquamarine;
+}
+.banner .upper{
+    position: absolute;
+    padding: 1rem;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    left: 20%;
+}
+.banner .upper span{
+padding: 0.5rem 1rem;
+margin: 1rem 0;cursor: pointer;
+background-color: black;
+font-weight: bold;
+width: 30%;
+
+}
+.banner .upper span .game{
+    transition: all 0.7s linear;
+}
+.banner .upper span:hover {
+    background-color: aquamarine;
+    color: black;
+}
+.list{
+    position: relative;
+}
+/* .list .list-data{
+    display: flex;
+    position: relative;
+
+    margin: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.list .list-data .card{
+    width: 20%;
+    display: flex;
+    overflow: hidden;
+    height: 8rem;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.76);
+    justify-content: flex-start;
+    transition: all 0.7s linear;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    margin: 0.5rem 1rem;
+}
+.list .list-data .card .dev-card{
+    width: 100%;
+    height:100%
+}
+.list .list-data .card  .middle{
+    width: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    transition: all 0.8s linear;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+}
+.list .list-data .card .up{
+    bottom:-34px;
+
+}
+.list .list-data .card:hover .hover{
+    border: 0px;
+}
+.list .ul-me{
+    border: 1px solid orange;
+    padding: 0.5rem;
+    width: 50%;
+    margin:  0 auto;
+    display: flex;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.list .ul-me li{
+    border: 1px solid orchid;
+    display: flex;
+    margin: 0.6rem;
+    cursor: pointer;
+    padding: 0.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+.list .list-container{
+    display: flex;
+    position: relative;
+    margin: 1rem 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list .pagination{
+    display: flex;
+    justify-content: center;
+}
+.list .pagination ul{
+    display: flex;
+    /* border: 1px solid orange; */
+    width: 60%;
+    box-shadow: 0 0 3px rgb(0,0,0,0.758);
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+.list .pagination ul li{
+    font-size: 1.3rem;
+    margin: 0.4rem;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #111;
+}
+
+@media (max-width:688px) {
+    .list .list-container{
+        margin: 0.5rem;
+        border: 1px solid green;
+        justify-content: flex-start;
+    }
+}
+@media (max-width:600px) {
+    .list .list-container{
+        margin: 0.5rem;
+        border: 1px solid green;
+    justify-content: space-between;
+
+    }
+}
+@media (max-width:500px) {
+    .banner .upper span{
+        width: 60%;
+        text-align: center;
+    }
+}

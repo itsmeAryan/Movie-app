@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.fav{
+    display: flex;
+
+    margin: 5rem 1rem;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+.fav .feb-left{
+    width: 25%;
+    align-self: stretch;
+    display: flex;
+    height: 100%;
+    height: 11rem;
+    justify-content: flex-start;
+}
+.fav .feb-right{
+    width: 70%;
+    display: flex;
+    position: relative;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fav .feb-right .card{
+    width: 20%;
+    display: flex;
+    overflow: hidden;
+    height: 10rem;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.76);
+    justify-content: flex-start;
+    transition: all 0.7s linear;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    margin: 0.5rem 1rem;
+}
+.fav .feb-right .card .dev-card{
+    width: 100%;
+    height:100%
+}
+.fav .feb-right .card  .middle{
+    width: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    transition: all 0.8s linear;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+}
+.fav .feb-right .card .up{
+    bottom:-34px;
+
+}
+.fav .feb-right .card:hover .hover{
+    border: 0px;
+}
+.fav .feb-left .all{
+    width: 100%;
+align-items: stretch;
+height: 100%;
+
+    padding: 0.3rem;
+    list-style: none;
+
+}
+.fav .feb-left .all li{
+    border: 1px solid whitesmoke;
+    margin-top: 0rem;
+    padding: 0.2rem;cursor: pointer;
+    padding-left: 1rem;
+    background-color: rgb(70, 70, 207);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

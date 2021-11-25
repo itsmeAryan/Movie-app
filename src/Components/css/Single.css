@@ -1,0 +1,93 @@
+.Singledata{
+    margin: 1rem 3rem;
+}
+.Singledata .Exteractor{
+    width: 100%;
+    display: flex;
+    height: 500px;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.Singledata .Exteractor .child-left{
+    width: 45%;
+    position: relative;
+
+    display: flex;
+}
+.Singledata .Exteractor .child-left .img{
+   width: 100%;
+   position: relative;
+
+   display: flex;
+}
+.Singledata .Exteractor .child-left .img img{
+    width: 100%;
+}
+.Singledata .Exteractor .child-right{
+    width:  50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Singledata .Exteractor .child-right .bind{
+    padding-left: 2rem;
+    box-shadow: 0 0 4px rgba(0,0,0,0.765);
+    padding-bottom: 1rem;
+    width:  60%;
+}
+.Singledata .Exteractor .child-right .bind .game{
+ width: 100%;
+ display: flex;
+}
+.Singledata .Exteractor .child-right .bind .game span{
+    padding: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #111;
+    width: 60%;
+}
+@media (max-width:970px) {
+    .Singledata .Exteractor .child-right .bind .game span{
+        width: 70%;
+    }
+    .Singledata .Exteractor .child-right .bind{
+        width: 80%;
+    }
+}
+@media (max-width:700px) {
+    .Singledata .Exteractor .child-right .bind{
+        width: 100%;
+    }
+    .Singledata .Exteractor .child-left .img img{
+        width: 100%;
+    height: 100%;}
+}
+@media (max-width:570px) {
+    .Singledata .Exteractor .child-right .bind{
+        padding-right: 1rem;
+    }
+    .Singledata{
+        margin: 1rem;
+    }
+    .Singledata .Exteractor .child-left{
+        width: 100%;
+        height: 330px;
+    }
+    .Singledata .Exteractor .child-right{
+        width: 100%;
+
+    }
+}
+@media (max-width:340px) {
+    .Singledata .Exteractor .child-right .bind{
+        width: 100%;
+        border: 1px solid orange;
+        padding-left: 1rem;
+    }
+    .Singledata .Exteractor .child-right .bind .game span{
+        width: 100%;
+    }
+}
